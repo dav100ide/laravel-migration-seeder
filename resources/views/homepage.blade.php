@@ -24,7 +24,7 @@
                 @foreach ($trains as $train)
                     <li>
                          {{$train->train_code}}
-                         {{ $train->departure_station }} - {{$train->arrival_station}}
+                         {{ $train->departure_time }} - {{$train->arrival_time}}
                     </li>
                 @endforeach
             </ul>
