@@ -20,7 +20,14 @@
     <main class="bg-light">
         <div class="container">
             <h1>treni</h1>
-            
+            <ul>
+                @foreach ($trains as $train)
+                    <li>
+                         {{$train->train_code}}
+                         {{ $train->departure_station }} - {{$train->arrival_station}}
+                    </li>
+                @endforeach
+            </ul>
         </div>
     </main>
 
